@@ -1,0 +1,15 @@
+services:
+  coze-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: coze-api:latest
+    container_name: coze-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+    ports:
+      - "3001:3001"

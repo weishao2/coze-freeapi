@@ -1,0 +1,27 @@
+# Ignore dependencies and VCS
+node_modules/
+.git/
+.gitignore
+
+# OS/IDE caches
+.vscode/
+.cache/
+coverage/
+Thumbs.db
+.DS_Store
+
+# Logs and temp
+logs/
+*.log
+.tmp/
+
+# Build artifacts (keep dist for builder stage; do not exclude src)
+# Do NOT exclude src or dist here
+
+# Trae and local docs/zips
+.trae/
+coze-freeapi-deploy-*.zip
+
+# NPM cache
+.npmrc
+.eslintcache
